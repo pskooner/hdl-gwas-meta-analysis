@@ -368,6 +368,8 @@ hdl-gwas-meta-analysis/
 └── docs/
     └── analysis_workflow.md
 
+---
+
 ## Repository Navigation
 
 - [`code/`](code/) – R, PLINK, and Unix/Linux analysis scripts
