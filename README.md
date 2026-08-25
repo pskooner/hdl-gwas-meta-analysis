@@ -367,3 +367,49 @@ hdl-gwas-meta-analysis/
 │
 └── docs/
     └── analysis_workflow.md
+
+---
+
+## Repository Navigation
+
+- [`code/`](code/) – R, PLINK, and Unix/Linux analysis scripts
+- [`figures/`](figures/) – GWAS, regional association, and meta-analysis visualizations
+- [`results/`](results/) – Summary of key statistical results
+- [`docs/`](docs/) – Detailed analysis workflow documentation
+
+---
+
+## Reproducibility
+
+The repository contains the analysis scripts and documentation required to describe the analytical workflow.
+
+Raw genotype and phenotype data are not distributed with this repository. Therefore, the complete analysis cannot be reproduced directly from the repository without access to the original source data.
+
+The scripts are organized according to the sequence of the original analysis:
+
+1. [`01_data_inspection.R`](code/01_data_inspection.R) – Inspect PLINK genotype data
+2. [`02_genotype_qc.sh`](code/02_genotype_qc.sh) – Conduct genotype quality control
+3. [`03_prepare_phenotype_covariates.sh`](code/03_prepare_phenotype_covariates.sh) – Prepare phenotype and covariate files
+4. [`04_gwas_analysis.sh`](code/04_gwas_analysis.sh) – Conduct SNP-level association analysis
+5. [`05_gwas_visualization.R`](code/05_gwas_visualization.R) – Generate GWAS visualizations and calculate λ
+6. [`06_regional_analysis.sh`](code/06_regional_analysis.sh) – Prepare regional association results
+7. [`07_prepare_meta_analysis.R`](code/07_prepare_meta_analysis.R) – Prepare association statistics for METAL
+8. [`08_meta_analysis_visualization.R`](code/08_meta_analysis_visualization.R) – Evaluate and visualize meta-analysis results
+
+See [`docs/analysis_workflow.md`](docs/analysis_workflow.md) for detailed documentation of the analytical workflow.
+
+---
+
+## Author
+
+**Parminder Kooner**
+
+M.S. Biostatistics and Data Science  
+Graduate Certificate in Genomics and Bioinformatics  
+UTHealth Houston School of Public Health
+
+---
+
+## Disclaimer
+
+This repository was developed as part of graduate coursework in applied genetic methods in public health. It is intended to demonstrate experience with genetic association analysis, genotype quality control, statistical genetics, genomic visualization, and genetic meta-analysis.
