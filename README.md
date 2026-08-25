@@ -367,7 +367,7 @@ hdl-gwas-meta-analysis/
 │
 └── docs/
     └── analysis_workflow.md
-
+```
 ---
 
 ## Repository Navigation
@@ -380,10 +380,6 @@ hdl-gwas-meta-analysis/
 ---
 
 ## Reproducibility
-
-The repository contains the analysis scripts and documentation required to describe the analytical workflow.
-
-Raw genotype and phenotype data are not distributed with this repository. Therefore, the complete analysis cannot be reproduced directly from the repository without access to the original source data.
 
 The scripts are organized according to the sequence of the original analysis:
 
@@ -407,9 +403,3 @@ See [`docs/analysis_workflow.md`](docs/analysis_workflow.md) for detailed docume
 M.S. Biostatistics and Data Science  
 Graduate Certificate in Genomics and Bioinformatics  
 UTHealth Houston School of Public Health
-
----
-
-## Disclaimer
-
-This repository was developed as part of graduate coursework in applied genetic methods in public health. It is intended to demonstrate experience with genetic association analysis, genotype quality control, statistical genetics, genomic visualization, and genetic meta-analysis.
